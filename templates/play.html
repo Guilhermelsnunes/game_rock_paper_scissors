@@ -1,0 +1,48 @@
+<html>
+<style>
+    div {
+        padding: 10px;
+    }
+
+    #btnSubmit{
+        width:50%;
+    }
+
+</style>
+<head>
+    <title>
+        "Rock Paper Scissors Game"
+    </title>
+</head>
+
+<body>
+        <form action="/evaluate" method="post">
+        <div>
+            <label for="name_1">Please enter your name:</label><br />
+            <input type="text" name="name_1" id="name_1" placeholder="Player 1"></input><br/>
+            <label for="player_1">Choose an option:</label>
+            <select name="player_1" id="player_1">
+                <option value="rock">Rock</option>
+                <option value="scissors">Scissors</option>
+                <option value="paper">Paper</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="player_2">Player 2:</label><br/>
+            <select name="player_2" id="player_2">
+            <option value="rock">Rock</option>
+            <option value="scissors">Scissors</option>
+            <option value="paper">Paper</option>
+            </select>
+        </div>
+
+        <div>
+            <input id="btnSubmit" type="submit" value="Play Game">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

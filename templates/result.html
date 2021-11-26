@@ -1,0 +1,12 @@
+<html>
+    {% if winner == None %}
+        <p>It's a draw!</p>
+    {% else %}
+        <p>Congratulations {{ winner.name }} ! You are the winner.</p>
+        <p>Your choice was {{ winner.choice }} over {{loser.choice}} from {{loser.name}}.</p>
+    {% endif %}
+    <br>
+    <p>Click <a href="/play">here</a> to play again</p>
+    <p>To return to the Welcomen page <a href="/">here</a></p>
+
+</html>
