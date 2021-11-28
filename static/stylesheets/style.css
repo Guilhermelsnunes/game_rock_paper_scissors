@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    }
+
+head {
+    background-color: white;
+    color: tomato;
+}
+
+div {
+    padding: 10px;
+}

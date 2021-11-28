@@ -1,12 +1,22 @@
 <html>
-    {% if winner == None %}
-        <p>It's a draw!</p>
-    {% else %}
-        <p>Congratulations {{ winner.name }} ! You are the winner.</p>
-        <p>Your choice was {{ winner.choice }} over {{loser.choice}} from {{loser.name}}.</p>
-    {% endif %}
-    <br>
-    <p>Click <a href="/play">here</a> to play again</p>
-    <p>To return to the Welcomen page <a href="/">here</a></p>
+    <head>
+        <title>
+            "Rock Paper Scissors Game"
+        </title>
+        <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+    </head>
 
+    <body>
+
+        {% if winner == None %}
+            <h3>It's a draw!</h3>
+        {% else %}
+            <h3>Congratulations {{ winner.name }} ! You are the winner.</h3>
+            <h3>Your choice was {{ winner.choice }} over {{loser.choice}} from {{loser.name}}.</h3>
+        {% endif %}
+        <br>
+        <hr>
+        <p>Click <a href="/play">here</a> to play again</p>
+        <p>To return to the Welcome page <a href="/">here</a></p>
+    </body>
 </html>

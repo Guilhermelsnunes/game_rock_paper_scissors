@@ -17,7 +17,7 @@ def play():
 @app.route('/evaluate', methods=['POST'])
 def evaluate():
     player_1 = Player( request.form['name_1'], request.form['player_1'] )
-    player_2 = Player( "Player 2", request.form['player_2'] )
+    player_2 = Player( request.form['name_2'], request.form['player_2'] )
     #name = "Computer", choice = random.choice(["rock", "scissors", "paper"])
 
     winner, loser = Game.Evaluate(player_1, player_2)

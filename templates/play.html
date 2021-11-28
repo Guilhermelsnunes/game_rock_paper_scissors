@@ -1,42 +1,49 @@
 <html>
-<style>
-    div {
-        padding: 10px;
-    }
-
-    #btnSubmit{
-        width:50%;
-    }
-
-</style>
 <head>
+    <style>
+   
+        #btnSubmit{
+            width:50%;
+        }
+    
+    </style>
     <title>
         "Rock Paper Scissors Game"
     </title>
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+
 </head>
 
+<body>
+    <h2>
+        Enter your name and select your option below and find out who the winner is! 
+    </h2>
+</body>
+<hr>
 <body>
         <form action="/evaluate" method="post">
         <div>
             <label for="name_1">Please enter your name:</label><br />
             <input type="text" name="name_1" id="name_1" placeholder="Player 1"></input><br/>
-            <label for="player_1">Choose an option:</label>
+            <label for="player_1">Choose an option:</label><br>
             <select name="player_1" id="player_1">
                 <option value="rock">Rock</option>
                 <option value="scissors">Scissors</option>
                 <option value="paper">Paper</option>
             </select>
         </div>
-
+            <br>
         <div>
-            <label for="player_2">Player 2:</label><br/>
+            <label for="name_2">Please enter your name:</label><br />
+            <input type="text" name="name_2" id="name_2" placeholder="Player 2"></input><br/>
+            <label for="player_2">Choose an option:</label><br>
             <select name="player_2" id="player_2">
-            <option value="rock">Rock</option>
-            <option value="scissors">Scissors</option>
-            <option value="paper">Paper</option>
+                <option value="rock">Rock</option>
+                <option value="scissors">Scissors</option>
+                <option value="paper">Paper</option>
             </select>
         </div>
-
+            <br>
         <div>
             <input id="btnSubmit" type="submit" value="Play Game">
         </div>
