@@ -1,26 +1,16 @@
-<html>
-<head>
-    <style>
-   
-        #btnSubmit{
-            width:50%;
-        }
-    
-    </style>
-    <title>
-        "Rock Paper Scissors Game"
-    </title>
-    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
 
-</head>
 
-<body>
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
     <h2>
         Enter your name and select your option below and find out who the winner is! 
     </h2>
-</body>
-<hr>
-<body>
+
+
         <form action="/evaluate" method="post">
         <div>
             <label for="name_1">Please enter your name:</label><br />
@@ -50,6 +40,4 @@
 
     </form>
 
-</body>
-
-</html>
+{% endblock %}

@@ -7,7 +7,7 @@ import random
 
 @app.route('/')
 def index():
-    return render_template('base.html')
+    return render_template('intro.html')
 
 @app.route('/play', methods=['POST','GET'])
 def play():

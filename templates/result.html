@@ -1,12 +1,8 @@
-<html>
-    <head>
-        <title>
-            "Rock Paper Scissors Game"
-        </title>
-        <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
-    </head>
 
-    <body>
+{% extends "base.html" %}
+
+{% block content %}
+
 
         {% if winner == None %}
             <h3>It's a draw!</h3>
@@ -15,8 +11,8 @@
             <h3>Your choice was {{ winner.choice }} over {{loser.choice}} from {{loser.name}}.</h3>
         {% endif %}
         <br>
-        <hr>
+        
         <p>Click <a href="/play">here</a> to play again</p>
         <p>To return to the Welcome page <a href="/">here</a></p>
-    </body>
-</html>
+
+{% endblock %}
