@@ -10,7 +10,9 @@ After clicking "Play Game" you are taken to a different screen where you will se
 
 
 To run it you will need
+
 Flask -     pip3 install Flask
+
 To run -      flask run
 
 
