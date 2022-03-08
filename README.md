@@ -9,6 +9,11 @@ Once in the play page both players have the option to put their names and to sel
 After clicking "Play Game" you are taken to a different screen where you will see the results and will show the item selected, showing why you won with a message to the winner and further explanation of the selected options. 
 
 
+To run it you will need
+Flask -     pip3 install Flask
+To run -      flask run
+
+
 Homepage
 ![Screenshot 2022-03-08 at 15 53 54](https://user-images.githubusercontent.com/93665740/157275217-f34d1263-63a5-4ee1-b8b6-4838951fb632.png)
 
